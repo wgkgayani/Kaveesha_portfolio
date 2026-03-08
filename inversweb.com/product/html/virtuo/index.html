@@ -695,7 +695,7 @@
                   <div
                     class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation active tmponhover tmp-fade-in animation-order-1"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModalCenter"
+                    data-bs-target="#aiLegalModal"
                   >
                     <div class="portfoli-card-img">
                       <div class="img-box v2">
@@ -723,15 +723,13 @@
                             <li><a href="#" class="tag-item">React</a></li>
                             <li><a href="#" class="tag-item">Node.js</a></li>
                             <li><a href="#" class="tag-item">OpenAI</a></li>
+                            <li><a href="#" class="tag-item">Python</a></li>
                             <li><a href="#" class="tag-item">Weaviate</a></li>
                           </ul>
                         </div>
                       </div>
                       <p class="project-description mt--10">
-                        Built a legal document chatbot with AI‑powered
-                        intelligent assistance using OpenAI API and vector
-                        database integration with JWT authentication, document
-                        processing pipeline, and template generation system.
+                        Built a legal document chatbot with AI-powered intelligent assistance using OpenAI API and vector database integration with JWT authentication, document processing pipeline, and template generation system. Developed real-time chat UI, document upload functionality, and file management.
                       </p>
                       <a
                         class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon btn-md"
@@ -757,7 +755,7 @@
                   <div
                     class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-2"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModalCenter"
+                    data-bs-target="#workOraModal"
                   >
                     <div class="portfoli-card-img">
                       <div class="img-box v2">
@@ -818,7 +816,7 @@
                   <div
                     class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-3"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModalCenter"
+                    data-bs-target="#fumiStoreModal"
                   >
                     <div class="portfoli-card-img">
                       <div class="img-box v2">
@@ -877,7 +875,7 @@
                   <div
                     class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-4"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModalCenter"
+                    data-bs-target="#luxuryVehicleModal"
                   >
                     <div class="portfoli-card-img">
                       <div class="img-box v2">
@@ -941,7 +939,7 @@
                   <div
                     class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-1"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModalCenter"
+                    data-bs-target="#saasDesignModal"
                   >
                     <div class="portfoli-card-img">
                       <div class="img-box v2">
@@ -991,7 +989,7 @@
                   <div
                     class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger single-animation tmponhover tmp-fade-in animation-order-2"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModalCenter"
+                    data-bs-target="#chatbotsAIModal"
                   >
                     <div class="portfoli-card-img">
                       <div class="img-box v2">
@@ -1274,23 +1272,12 @@
       </div>
     </div>
 
-    <!-- Modal (project details) -->
-    <div
-      class="modal fade"
-      id="exampleModalCenter"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
+    <!-- Modal 1: AI-powered Legal Assistance -->
+    <div class="modal fade" id="aiLegalModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true"><i class="fas fa-times"></i></span>
             </button>
           </div>
@@ -1299,42 +1286,297 @@
               <div class="col-lg-6">
                 <div class="portfolio-popup-thumbnail">
                   <div class="image">
-                    <img
-                      class="w-100"
-                      src="assets/images/portfolio/portfolio-04.jpg"
-                      alt="slide"
-                    />
+                    <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-1.jpg" alt="AI Legal Assistance" />
                   </div>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="text-content">
-                  <h3><span>Project Details</span></h3>
-                  <p class="mb--30">
-                    Full description of the project goes here. You can customize
-                    this modal for each project if needed.
-                  </p>
+                  <h3><span>AI-powered Legal Assistance</span></h3>
+                  <p class="mb--20"><strong>Overview:</strong> A legal document chatbot with AI-powered intelligent assistance.</p>
+                  <p class="mb--20"><strong>Tech Stack:</strong> React.js, Node.js, Express.js, OpenAI API, Python, Weaviate (Vector DB), PostgreSQL</p>
+                  <p class="mb--20"><strong>Features:</strong></p>
+                  <ul style="margin-left: 20px;">
+                    <li>Real-time chat UI with document upload</li>
+                    <li>JWT authentication & file management</li>
+                    <li>Document processing pipeline</li>
+                    <li>Template generation system</li>
+                  </ul>
                   <div class="button-group button-group-pd mt--20">
-                    <a
-                      class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon"
-                      href="#"
-                    >
+                    <a class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon" href="#" target="_blank">
                       <div class="icon-reverse-wrapper">
                         <span class="btn-text">Live Demo</span>
-                        <span class="btn-icon"
-                          ><i class="fas fa-thumbs-up"></i
-                        ></span>
+                        <span class="btn-icon"><i class="fas fa-thumbs-up"></i></span>
                       </div>
                     </a>
-                    <a
-                      class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon"
-                      href="#"
-                    >
+                    <a class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon" href="#" target="_blank">
                       <div class="icon-reverse-wrapper">
                         <span class="btn-text">GitHub</span>
-                        <span class="btn-icon"
-                          ><i class="fas fa-chevron-right"></i
-                        ></span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: WorkOra -->
+    <div class="modal fade" id="workOraModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="portfolio-popup-thumbnail">
+                  <div class="image">
+                    <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-3.jpg" alt="WorkOra" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="text-content">
+                  <h3><span>WorkOra</span></h3>
+                  <p class="mb--20"><strong>Overview:</strong> A full-stack job-matching portal connecting students with internships and part-time roles.</p>
+                  <p class="mb--20"><strong>Tech Stack:</strong> React.js, TypeScript, Tailwind CSS, Node.js, Express.js, PostgreSQL</p>
+                  <p class="mb--20"><strong>Features:</strong></p>
+                  <ul style="margin-left: 20px;">
+                    <li>Role-aware registration flows (Student/Employer)</li>
+                    <li>Dynamic dashboards & conditional UI</li>
+                    <li>Protected routes & JWT authentication</li>
+                    <li>Verified candidate profiles</li>
+                  </ul>
+                  <div class="button-group button-group-pd mt--20">
+                    <a class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon" href="#" target="_blank">
+                      <div class="icon-reverse-wrapper">
+                        <span class="btn-text">Live Demo</span>
+                        <span class="btn-icon"><i class="fas fa-thumbs-up"></i></span>
+                      </div>
+                    </a>
+                    <a class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon" href="https://github.com" target="_blank">
+                      <div class="icon-reverse-wrapper">
+                        <span class="btn-text">GitHub</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: FumiStore -->
+    <div class="modal fade" id="fumiStoreModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="portfolio-popup-thumbnail">
+                  <div class="image">
+                    <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-4.jpg" alt="FumiStore" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="text-content">
+                  <h3><span>FumiStore</span></h3>
+                  <p class="mb--20"><strong>Overview:</strong> A full-stack e-commerce furniture shopping platform with modern and AI-powered features.</p>
+                  <p class="mb--20"><strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB, Stripe (Payment)</p>
+                  <p class="mb--20"><strong>Features:</strong></p>
+                  <ul style="margin-left: 20px;">
+                    <li>Product catalog with search & filtering</li>
+                    <li>Shopping cart & secure checkout</li>
+                    <li>AI-powered product recommendations</li>
+                    <li>User profiles & order history</li>
+                    <li>Admin dashboard for inventory management</li>
+                  </ul>
+                  <div class="button-group button-group-pd mt--20">
+                    <a class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon" href="#" target="_blank">
+                      <div class="icon-reverse-wrapper">
+                        <span class="btn-text">Live Demo</span>
+                        <span class="btn-icon"><i class="fas fa-thumbs-up"></i></span>
+                      </div>
+                    </a>
+                    <a class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon" href="https://github.com" target="_blank">
+                      <div class="icon-reverse-wrapper">
+                        <span class="btn-text">GitHub</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4: Luxury Vehicle Shopping Platform -->
+    <div class="modal fade" id="luxuryVehicleModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="portfolio-popup-thumbnail">
+                  <div class="image">
+                    <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-2.jpg" alt="Luxury Vehicle" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="text-content">
+                  <h3><span>Luxury Vehicle Shopping Platform</span></h3>
+                  <p class="mb--20"><strong>Overview:</strong> A responsive luxury car showcase website with premium listings and smooth animations.</p>
+                  <p class="mb--20"><strong>Tech Stack:</strong> React.js, Vite, Tailwind CSS, JavaScript, Framer Motion</p>
+                  <p class="mb--20"><strong>Features:</strong></p>
+                  <ul style="margin-left: 20px;">
+                    <li>Premium car listing & filtering</li>
+                    <li>High-quality image gallery</li>
+                    <li>Smooth scroll animations</li>
+                    <li>Responsive design (Mobile-first)</li>
+                    <li>Inquiry form integration</li>
+                  </ul>
+                  <div class="button-group button-group-pd mt--20">
+                    <a class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon" href="#" target="_blank">
+                      <div class="icon-reverse-wrapper">
+                        <span class="btn-text">Live Demo</span>
+                        <span class="btn-icon"><i class="fas fa-thumbs-up"></i></span>
+                      </div>
+                    </a>
+                    <a class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon" href="https://github.com" target="_blank">
+                      <div class="icon-reverse-wrapper">
+                        <span class="btn-text">GitHub</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5: SAAS Website Design -->
+    <div class="modal fade" id="saasDesignModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="portfolio-popup-thumbnail">
+                  <div class="image">
+                    <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-1.jpg" alt="SAAS Design" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="text-content">
+                  <h3><span>SAAS Website Design</span></h3>
+                  <p class="mb--20"><strong>Overview:</strong> Modern SAAS website design with focus on user experience and conversion optimization.</p>
+                  <p class="mb--20"><strong>Tools Used:</strong> Figma, JavaScript, Webflow</p>
+                  <p class="mb--20"><strong>Features:</strong></p>
+                  <ul style="margin-left: 20px;">
+                    <li>Responsive UI/UX design</li>
+                    <li>Interactive components</li>
+                    <li>Modern typography & color scheme</li>
+                    <li>Conversion-optimized layout</li>
+                    <li>CTA button strategies</li>
+                  </ul>
+                  <div class="button-group button-group-pd mt--20">
+                    <a class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon" href="#" target="_blank">
+                      <div class="icon-reverse-wrapper">
+                        <span class="btn-text">View Design</span>
+                        <span class="btn-icon"><i class="fas fa-thumbs-up"></i></span>
+                      </div>
+                    </a>
+                    <a class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon" href="https://figma.com" target="_blank">
+                      <div class="icon-reverse-wrapper">
+                        <span class="btn-text">Figma</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6: Chatbots & AI Support -->
+    <div class="modal fade" id="chatbotsAIModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="portfolio-popup-thumbnail">
+                  <div class="image">
+                    <img class="w-100" src="assets/images/latest-portfolio/portfoli-img-3.jpg" alt="Chatbots AI" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="text-content">
+                  <h3><span>Chatbots & AI Support</span></h3>
+                  <p class="mb--20"><strong>Overview:</strong> AI-powered chatbot solution for customer support and engagement.</p>
+                  <p class="mb--20"><strong>Tools & Technologies:</strong> Adobe XD, Webflow, OpenAI, Natural Language Processing</p>
+                  <p class="mb--20"><strong>Features:</strong></p>
+                  <ul style="margin-left: 20px;">
+                    <li>24/7 automated customer support</li>
+                    <li>Natural language understanding</li>
+                    <li>Multi-language support</li>
+                    <li>Integration with CRM systems</li>
+                    <li>Sentiment analysis & analytics</li>
+                  </ul>
+                  <div class="button-group button-group-pd mt--20">
+                    <a class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon" href="#" target="_blank">
+                      <div class="icon-reverse-wrapper">
+                        <span class="btn-text">Live Demo</span>
+                        <span class="btn-icon"><i class="fas fa-thumbs-up"></i></span>
+                      </div>
+                    </a>
+                    <a class="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon" href="https://github.com" target="_blank">
+                      <div class="icon-reverse-wrapper">
+                        <span class="btn-text">GitHub</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
                       </div>
                     </a>
                   </div>
