@@ -1395,9 +1395,10 @@
       </div>
     </section>
 
-    <!-- Experience (timeline with alternating cards) -->
-    <section class="blog-and-news-are tmp-section-gapTop" id="experience">
+    <!-- Experience & Certificates Timeline Section -->
+    <section class="exp-cert-section tmp-section-gapTop" id="experience" style="position: relative;">
       <div class="container">
+        <!-- Main Section Header -->
         <div class="section-head mb--50">
           <div
             class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1"
@@ -1411,158 +1412,164 @@
           </h2>
         </div>
 
-            <style>
-            /* Minimal timeline styles scoped to #experience */
-            #experience .timeline-center{position:relative}
-            /* Make the timeline container positioned so we can draw one continuous line */
-            #experience .container-fluid{position:relative}
-
-            /* Continuous gradient vertical line across the whole timeline (visible on desktop)
-              Use ::before on the container so it's a single element spanning the section. */
-            #experience .container-fluid::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:6px;transform:translateX(-50%);background:linear-gradient(to bottom,#139bfd 0%,#9bd3f4 28%,#13fdfd 60%,#139bfd 100%);z-index:1;border-radius:4px;}
-
-            /* Hide the per-row small lines (we keep dots) to avoid segmented appearance */
-            #experience .timeline-center > .timeline-line{display:none}
-
-            /* Dots centered on the line; border color is controlled by CSS (no inline styles)
-              Use nth-of-type to alternate dot colors between items */
-            #experience .timeline-dot{position:absolute;left:50%;transform:translateX(-50%);width:20px;height:20px;border-radius:50%;background:#fff;border:4px solid transparent;top:50%;margin-top:-10px;z-index:2}
-            #experience .timeline-row:nth-of-type(odd) .timeline-dot{border-color:#50aef0;box-shadow:0 0 0 20px rgba(150, 199, 234, 0.06)}
-            #experience .timeline-row:nth-of-type(even) .timeline-dot{border-color:#f8b6c0;box-shadow:0 0 0 20px rgba(244, 205, 211, 0.06)}
-            @media(min-width:992px){#experience .timeline-row{min-height:150px}}
-            </style>
-
-        <div class="container-fluid">
-          <!-- 6 alternating items: left / right / left / right / left / right -->
-          <div class="row g-5">
-            <!-- Item 1: left -->
-            <div class="col-12 timeline-row align-items-center">
-              <div class="row align-items-center">
-                <div class="col-lg-5 col-md-6 col-12">
-                  <div class="blog-card-style-two tmp-scroll-trigger tmponhover tmp-fade-in animation-order-1 single-animation">
-                    <div class="blog-content-wrap">
-                      <h3 class="blog-title">Web Design for Beginners</h3>
-                      <p class="blog-meta">University of Moratuwa</p>
-                        <div class="tag-items">
-                          <ul>
-                            <li><a href="https://www.linkedin.com/posts/kaveesha-gayani-739081303_web-design-for-beginners-ugcPost-7298445945942282240-PAc2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE1uQt0BxucbA9EYZx83l68iaDCCQPT2Uf0" 
-                              class="tag-item">View certificate</a></li>
-                          </ul>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 d-none d-lg-block timeline-center">
-                  <div class="timeline-line"></div>
-                  <div class="timeline-dot"></div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12"></div>
-              </div>
-            </div>
-
-            <!-- Item 2: right -->
-            <div class="col-12 timeline-row align-items-center">
-              <div class="row align-items-center">
-                <div class="col-lg-5 col-md-6 col-12 d-none d-lg-block"></div>
-                <div class="col-lg-2 d-none d-lg-block timeline-center">
-                  <div class="timeline-line"></div>
-                  <div class="timeline-dot"></div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12">
-                  <div class="blog-card-style-two tmp-scroll-trigger tmponhover tmp-fade-in animation-order-2 single-animation">
-                    <div class="blog-content-wrap">
-                      <h3 class="blog-title">Frontend Engineer</h3>
-                      <p class="blog-meta">Digital Innovations Ltd. | 2020 – 2022</p>
-                      <p class="card-para">Developed client-facing applications and collaborated closely with UX teams.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 3: left -->
-            <div class="col-12 timeline-row align-items-center">
-              <div class="row align-items-center">
-                <div class="col-lg-5 col-md-6 col-12">
-                  <div class="blog-card-style-two tmp-scroll-trigger tmponhover tmp-fade-in animation-order-3 single-animation">
-                    <div class="blog-content-wrap">
-                      <h3 class="blog-title">React Developer</h3>
-                      <p class="blog-meta">Freelance | 2019 – 2020</p>
-                      <p class="card-para">Built responsive single-page applications and component libraries.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 d-none d-lg-block timeline-center">
-                  <div class="timeline-line"></div>
-                  <div class="timeline-dot"></div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12"></div>
-              </div>
-            </div>
-
-            <!-- Item 4: right -->
-            <div class="col-12 timeline-row align-items-center">
-              <div class="row align-items-center">
-                <div class="col-lg-5 col-md-6 col-12 d-none d-lg-block"></div>
-                <div class="col-lg-2 d-none d-lg-block timeline-center">
-                  <div class="timeline-line"></div>
-                  <div class="timeline-dot"></div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12">
-                  <div class="blog-card-style-two tmp-scroll-trigger tmponhover tmp-fade-in animation-order-4 single-animation">
-                    <div class="blog-content-wrap">
-                      <h3 class="blog-title">UI/UX Designer</h3>
-                      <p class="blog-meta">PixelCraft Studio | 2017 – 2019</p>
-                      <p class="card-para">Designed pixel-perfect interfaces and produced interactive prototypes.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 5: left -->
-            <div class="col-12 timeline-row align-items-center">
-              <div class="row align-items-center">
-                <div class="col-lg-5 col-md-6 col-12">
-                  <div class="blog-card-style-two tmp-scroll-trigger tmponhover tmp-fade-in animation-order-5 single-animation">
-                    <div class="blog-content-wrap">
-                      <h3 class="blog-title">Open Source Contributor</h3>
-                      <p class="blog-meta">Various Projects | 2016 – Present</p>
-                      <p class="card-para">Contributed features and fixes to multiple libraries and community projects.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 d-none d-lg-block timeline-center">
-                  <div class="timeline-line"></div>
-                  <div class="timeline-dot"></div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12"></div>
-              </div>
-            </div>
-
-            <!-- Item 6: right (Certificates card) -->
-            <div class="col-12 timeline-row align-items-center">
-              <div class="row align-items-center">
-                <div class="col-lg-5 col-md-6 col-12 d-none d-lg-block"></div>
-                <div class="col-lg-2 d-none d-lg-block timeline-center">
-                  <div class="timeline-line"></div>
-                  <div class="timeline-dot"></div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12">
-                  <div class="blog-card-style-two tmp-scroll-trigger tmponhover tmp-fade-in animation-order-6 single-animation">
-                    <div class="blog-content-wrap">
-                      <h3 class="blog-title">Certificates</h3>
-                      <p class="blog-meta">Various Providers | 2015 – Present</p>
-                      <p class="card-para">Completed certifications in React, TypeScript, UI/UX and cloud fundamentals.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+        <!-- Column Headers -->
+        <div class="row mb--60">
+          <div class="col-lg-6">
+            <h4 style="text-align: left; color: #139bfd; font-weight: 700; font-size: 20px; letter-spacing: 2px; margin-bottom: 0; background: linear-gradient(135deg, #139bfd 0%, #0d7bc1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">CERTIFICATIONS</h4>
+          </div>
+          <div class="col-lg-6">
+            <h4 style="text-align: left; color: #139bfd; font-weight: 700; font-size: 20px; letter-spacing: 2px; margin-bottom: 0; background: linear-gradient(135deg, #139bfd 0%, #0d7bc1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">EXPERIENCE</h4>
           </div>
         </div>
 
+        <style>
+          .exp-cert-section .timeline-col {
+            position: relative;
+            padding: 0 30px;
+          }
+          .exp-cert-section .timeline-col::before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #139bfd 0%, #0d7bc1 50%, #139bfd 100%);
+            z-index: 1;
+            border-radius: 2px;
+          }
+          .exp-cert-section .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .exp-cert-section .timeline-dot {
+            position: absolute;
+            left: -12px;
+            width: 22px;
+            height: 22px;
+            background: linear-gradient(135deg, #139bfd 0%, #0d7bc1 100%);
+            border: 5px solid #fff;
+            border-radius: 50%;
+            top: 8px;
+            z-index: 2;
+            box-shadow: 0 0 0 3px rgba(19, 155, 253, 0.2);
+            transition: all 0.3s ease;
+          }
+          .exp-cert-section .timeline-item:hover .timeline-dot {
+            transform: scale(1.15);
+            box-shadow: 0 0 0 5px rgba(19, 155, 253, 0.3), 0 4px 12px rgba(19, 155, 253, 0.25);
+          }
+          .exp-cert-section .timeline-content {
+            margin-left: 50px;
+            background: linear-gradient(135deg, rgba(19, 155, 253, 0.05) 0%, rgba(13, 123, 193, 0.05) 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #139bfd;
+            flex: 1;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+          }
+          .exp-cert-section .timeline-item:hover .timeline-content {
+            box-shadow: 0 8px 24px rgba(19, 155, 253, 0.15);
+            background: linear-gradient(135deg, rgba(19, 155, 253, 0.1) 0%, rgba(13, 123, 193, 0.1) 100%);
+            transform: translateY(-2px);
+            border-left-color: #0d7bc1;
+          }
+          .exp-cert-section .timeline-content h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+          }
+          .exp-cert-section .timeline-content .date {
+            font-size: 13px;
+            color: #139bfd;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+          }
+          .exp-cert-section .timeline-content p {
+            font-size: 14px;
+            color: #ffffff;
+            line-height: 1.65;
+            margin: 0;
+          }
+        </style>
+
+        <div class="row">
+          <!-- Left Column: Certifications -->
+          <div class="col-lg-6">
+            <div class="timeline-col">
+              <!-- Certificate Item 1 -->
+              <div class="timeline-item tmp-scroll-trigger tmp-fade-in animation-order-1">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Web Design for Beginners</h3>
+                  <div class="date">2018 – 2022</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+              </div>
+
+              <!-- Certificate Item 2 -->
+              <div class="timeline-item tmp-scroll-trigger tmp-fade-in animation-order-2">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>React Fundamentals</h3>
+                  <div class="date">2018 – 2022</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+              </div>
+
+              <!-- Certificate Item 3 -->
+              <div class="timeline-item tmp-scroll-trigger tmp-fade-in animation-order-3">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>UI/UX Design Principles</h3>
+                  <div class="date">2018 – 2022</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Experience -->
+          <div class="col-lg-6">
+            <div class="timeline-col">
+              <!-- Experience Item 1 -->
+              <div class="timeline-item tmp-scroll-trigger tmp-fade-in animation-order-1">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>UI/UX Designer</h3>
+                  <div class="date">2015 – 2022</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+              </div>
+
+              <!-- Experience Item 2 -->
+              <div class="timeline-item tmp-scroll-trigger tmp-fade-in animation-order-2">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Full-Stack Developer</h3>
+                  <div class="date">2015 – 2022</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+              </div>
+
+              <!-- Experience Item 3 -->
+              <div class="timeline-item tmp-scroll-trigger tmp-fade-in animation-order-3">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Frontend Developer</h3>
+                  <div class="date">2015 – 2022</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
