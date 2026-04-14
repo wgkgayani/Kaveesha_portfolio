@@ -23486,7 +23486,14 @@ section.clients-testimonial-area {
 }
 
 #form-messages.success {
-  color: var(--color-success);
+  color: #1abc9c !important;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 188, 156, 0.15) 0%,
+    rgba(39, 174, 96, 0.15) 100%
+  ) !important;
+  border-left: 4px solid #1abc9c !important;
+  box-shadow: 0 2px 8px rgba(26, 188, 156, 0.1) !important;
 }
 
 .contact-area-left-portfolio-fixed .form-group {
@@ -36211,6 +36218,43 @@ body.tmp-white-version.color-primary-3rd .services-widget.v2 .active-bg {
 
 .active-light.demo-modal-area .wrapper .tmp-modal-inner .demo-top .subtitle {
   color: #3d3d3d !important;
+}
+
+/* Contact Form Success Alert Styles */
+#form-messages {
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  animation: slideDown 0.3s ease-out;
+  display: none;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 188, 156, 0.15) 0%,
+    rgba(39, 174, 96, 0.15) 100%
+  );
+  color: #1abc9c;
+  border-left: 4px solid #1abc9c;
+  border: 1px solid rgba(26, 188, 156, 0.3);
+  box-shadow: 0 2px 8px rgba(26, 188, 156, 0.1);
+}
+
+#form-messages.success {
+  display: block !important;
+  color: #1abc9c !important;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=../maps/style.css.map */
